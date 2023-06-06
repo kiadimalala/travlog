@@ -30,15 +30,11 @@
 
 @media screen and (max-width: 1024px) {
   .travlog__package {
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .travlog__package {
     width: 40%;
     flex-grow: 1;
   }
 }
+
 
 @media screen and (max-width: 450px) {
   .travlog__package {
