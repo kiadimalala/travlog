@@ -1,0 +1,9 @@
+.input__container {
+  position: relative;
+}
+.input {
+  border: 0;
+}
+.input:focus {
+  outline: none;
+}

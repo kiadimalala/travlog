@@ -1,0 +1,47 @@
+.travlog__package {
+  width: 204.5px;
+  height: 151px;
+  background: var(--color-white);
+  /* Grey Scale/Black 10 */
+
+  border: 1px solid rgba(25, 24, 37, 0.1);
+  border-radius: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.travlog__package h1 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  color: var(--color-orange);
+}
+
+.travlog__package p {
+  padding-top: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+@media screen and (max-width: 1024px) {
+  .travlog__package {
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .travlog__package {
+    width: 40%;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .travlog__package {
+    width: 100%;
+  }
+}
