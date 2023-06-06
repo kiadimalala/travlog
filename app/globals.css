@@ -5,7 +5,7 @@
   --color-orange: #ff5722;
   --color-text: #191825;
   --color-yellow: #facd49;
-  --color-fadeYellow:rgba(250,205,73,0.08);
+  --color-fadeYellow: rgba(250, 205, 73, 0.08);
   --color-white: #fff;
   --color-grayscale: rgba(25, 24, 37, 0.5);
   --color-textLight: rgba(25, 24, 37, 0.5);
@@ -24,7 +24,7 @@ a {
 }
 
 .section__padding {
-  padding: 32px 8rem;
+  padding: 32px 128px;
 }
 
 .section__margin {
@@ -43,7 +43,7 @@ a {
 
 @media screen and (max-width: 700px) {
   .section__padding {
-    padding: 4rem;
+    padding: 64px 32px;
   }
 
   .section__margin {
@@ -51,9 +51,9 @@ a {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 450px) {
   .section__padding {
-    padding: 32px 1rem;
+    padding: 32px 16px;
   }
 
   .section__margin {
