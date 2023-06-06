@@ -15,7 +15,7 @@ const matter = localFont({
       weight: "400",
     },
     {
-      path: "../../public/assets/fonts/Matter-Semibold.otf",
+      path: "../../public/assets/fonts/Matter-SemiBold.otf",
       weight: "600",
     },
   ],
