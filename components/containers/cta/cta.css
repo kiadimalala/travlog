@@ -1,5 +1,6 @@
 .travlog__cta {
   position: relative;
+  padding: 32px 128px;
 }
 .travlog__cta-container {
   background: var(--color-fadeYellow);
@@ -44,13 +45,17 @@
 /*===============================*/
 .travlog__cta-container-form {
   flex: 1;
+
+  justify-content: space-between;
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 64px;
 }
 
 .travlog__cta-container-form input {
-  width: 757px;
+  max-width: 757px;
+  width: 100%;
   height: 96px;
   background: var(--color-white);
   border-radius: 32px;
@@ -83,4 +88,83 @@
   position: absolute;
   top: -64px;
   left: -32px;
+}
+
+@media screen and (max-width: 1024px) {
+  .travlog__cta {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .travlog__cta-container-content h3 {
+    font-size: 23px;
+  }
+  .travlog__cta-container-content h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .travlog__cta-container-form {
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .travlog__cta {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .travlog__cta-container {
+    padding: 64px 32px;
+  }
+  .travlog__cta-container-form {
+    gap: 16px;
+  }
+
+  .travlog__cta-container-content h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .travlog__cta-container-content h3 {
+    font-size: 18px;
+  }
+  .travlog__cta-container-form .btn-subscribe {
+    padding: 22px 32px;
+    font-size: 18px;
+    border-radius: 16px;
+    /* identical to box height, or 28px */
+  }
+  .travlog__cta-container-form input {
+    width: 100%;
+    height: 72px;
+    font-size: 18px;
+    border-radius: 16px;
+  }
+  .travlog__cta-container-form svg {
+    top: 20px;
+    left: 18px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .travlog__cta-deco {
+    display: none;
+  }
+  .travlog__cta {
+    padding: 64px 16px;
+  }
+  .travlog__cta-container-form {
+    flex-direction: column;
+  }
+  .travlog__cta-container-form .btn-subscribe {
+    width: 100%;
+  }
+  .travlog__cta-container-content h3 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .travlog__cta-container-content h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
