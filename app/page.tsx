@@ -1,4 +1,12 @@
-import { Header, Brand, Services, Travel, Features,CTA } from "@/components";
+import {
+  Header,
+  Brand,
+  Services,
+  Travel,
+  Features,
+  CTA,
+  Footer,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -8,7 +16,8 @@ export default function Home() {
       {/* <Services /> */}
       <Travel />
       <Features />
-      <CTA/>
+      <CTA />
+      <Footer />
     </div>
   );
 }

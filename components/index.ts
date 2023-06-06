@@ -19,3 +19,5 @@ export {default as Features} from "./containers/features/Features"
 export {default as CTA} from "./containers/cta/CTA"
 
 export {default as Input} from './Basics/Input/Input'
+
+export {default as Footer} from './containers/footer/Footer'
