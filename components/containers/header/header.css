@@ -1,0 +1,218 @@
+.travlog__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.travlog__header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.travlog__header-content .btn-explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  width: 224px;
+  height: 56px;
+
+  color: var(--color-secondary);
+  background: var(--color-white);
+  box-shadow: 0px 548px 219px rgba(0, 0, 0, 0.01),
+    0px 308px 185px rgba(0, 0, 0, 0.04), 0px 137px 137px rgba(0, 0, 0, 0.06),
+    0px 34px 75px rgba(0, 0, 0, 0.07), 0px 0px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 100px;
+}
+
+.travlog__header-content .btn-explore p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.travlog__header-content .btn-explore svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+
+.travlog__header-content h1 {
+  font-weight: 700;
+  font-size: 69px;
+  line-height: 120%;
+  max-width: 412px;
+  margin-top: 43px;
+}
+
+.travlog__header-content h1 span {
+  color: var(--color-secondary);
+}
+
+.travlog__header-content p {
+  color: var(--color-grayscale);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+
+  margin-top: 43px;
+  max-width: 412px;
+}
+
+.travlog__header-content_cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 43px;
+}
+
+.travlog__header-content_cta .btn-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 141px;
+  height: 49px;
+  background: var(--color-primary);
+
+  box-shadow: 0px 81px 32px rgba(0, 0, 0, 0.01),
+    0px 45px 27px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.09),
+    0px 5px 11px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+}
+
+.travlog__header-content_cta .btn-start p {
+  margin: 0;
+  color: var(--color-white);
+}
+
+.travlog__header-content_cta .btn-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 181px;
+  height: 56px;
+  background: var(--color-white);
+
+  flex-direction: row-reverse;
+
+  border-radius: 100px;
+
+  border: 1px solid var(--color-light);
+}
+
+.travlog__header-content_cta .btn-view p {
+  margin: 0;
+  color: black;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.travlog__header-content_cta .btn-view svg {
+  color: var(--color-primary);
+  width: 24px;
+  height: 24px;
+}
+
+.travlog__header-deco {
+  position: absolute;
+  left: 3%;
+  bottom: 0;
+  width: 65px;
+  height: 169.95px;
+  z-index: 500;
+}
+@media screen and (max-width: 1024px) {
+  .travlog__header {
+    flex-direction: column-reverse;
+    padding: 32px 2rem;
+  }
+
+  .travlog__header-content {
+    width: 100%;
+    align-items: center;
+    padding: 32px 4rem;
+  }
+
+  .travlog__header-content h1 {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .travlog__header-content > p {
+    max-width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .travlog__header-image {
+    width: 100%;
+    padding: 0 4rem;
+  }
+  .travlog__header-image img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .travlog__header-content {
+    width: 100%;
+    align-items: center;
+  }
+  .travlog__header-image {
+    padding: 0 4rem;
+  }
+
+  .travlog__header-content {
+    padding: 32px 2rem;
+  }
+  .travlog__header-content h1 {
+    font-size: 56px;
+  }
+
+  .travlog__header-content > p {
+    max-width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+ 
+}
+
+@media screen and (max-width: 450px) {
+  .travlog__header-content {
+    padding: 32px 0;
+  }
+  .travlog__header-content h1 {
+    font-size: 40px;
+    padding: 0;
+  }
+  .travlog__header-content > p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .travlog__header-image {
+    padding: 0;
+  }
+
+  .travlog__header-content_cta {
+    flex-direction: column;
+    width: 100%;
+  }
+  .travlog__header-content_cta .btn-view,
+  .travlog__header-content_cta .btn-start {
+    width: 100%;
+    height: 65px;
+  }
+  .travlog__header-deco {
+    display: none;
+  }
+}

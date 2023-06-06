@@ -1,0 +1,36 @@
+.travlog__service {
+  width: 350px;
+  height: 443px;
+
+  background: var(--color-white);
+  border: 1px solid rgba(25, 24, 37, 0.1);
+  border-radius: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px;
+  gap: 32px;
+}
+
+.travlog__service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-height: 153px;
+}
+.travlog__service-content h1 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.travlog__service-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+.travlog__services {
+  padding: 64px 8rem;
+  display: flex;
+  align-items: center;
+}
+
+.travlog__services-content h3 {
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+
+  letter-spacing: 0.2em;
+  color: var(--color-secondary);
+}
+
+.travlog__services-content h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  max-width: 444px;
+  margin-top: 16px;
+}
+
+.travlog__services-content_services {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}

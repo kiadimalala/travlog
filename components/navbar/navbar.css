@@ -1,0 +1,137 @@
+.travlog__navbar {
+  padding: 32px 8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.travlog__navbar-logo {
+  width: 142px;
+  height: 40px;
+}
+
+.travlog__navbar-links_container {
+  display: flex;
+  align-items: center;
+  color: var(--color-grayscale);
+}
+
+.travlog__navbar-sign {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.travlog__navbar-sign p,
+.travlog__navbar-links_container p,
+.travlog__navbar-sign .btn-sign {
+  padding: 16px 32px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  cursor: pointer;
+}
+.travlog__navbar-sign .btn-sign {
+  padding: 16px 24px;
+
+}
+
+.travlog__navbar-sign .btn-sign p {
+  padding: 0;
+}
+
+.travlog__navbar-sign .btn-sign,
+.travlog__navbar-menu_container-links-sign .btn-sign {
+  background: var(--color-primary);
+  color: var(--color-white);
+  width: 115px;
+  height: 49px;
+  border-radius: 100px;
+}
+
+.travlog__navbar-menu {
+  justify-content: center;
+  align-items: center;
+}
+
+.travlog__navbar-menu {
+  display: none;
+  position: relative;
+}
+
+.travlog__navbar-menu .btn-menu {
+  background: var(--color-primary);
+  color: var(--color-white);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 28px;
+}
+
+/*menu*/
+
+.travlog__navbar-menu_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-white);
+  position: absolute;
+  padding: 2rem;
+  top: 60px;
+  right: 0;
+  border-radius: 10px;
+  min-width: 210px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1600;
+}
+
+.travlog__navbar-menu_container-links p {
+  text-align: center;
+}
+.travlog__navbar-menu_container-links p,
+.travlog__navbar-menu_container-links-sign .btn-sign {
+  margin: 1rem 0;
+}
+.travlog__navbar-menu_container-links-sign .btn-sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .travlog__navbar {
+    padding: 32px 6rem;
+  }
+  .travlog__navbar-links_container {
+    display: none;
+  }
+  .travlog__navbar-menu {
+    display: flex;
+  }
+  .travlog__navbar-sign {
+    flex: 1;
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .travlog__navbar {
+    padding: 32px 2rem;
+  }
+  .travlog__navbar-sign {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .travlog__navbar {
+    padding: 32px 2rem;
+  }
+}
