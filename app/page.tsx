@@ -6,6 +6,7 @@ import {
   Features,
   CTA,
   Footer,
+  Testimonials,
 } from "@/components";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Travel />
       <Features />
       <CTA />
+      <Testimonials />
       <Footer />
     </div>
   );
