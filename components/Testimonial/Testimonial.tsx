@@ -19,10 +19,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   pos,
   position,
 }) => {
-  const [windowSize, setWindowSize] = useState([
-    window.innerWidth,
-    window.innerHeight,
-  ]);
+  const [windowSize, setWindowSize] = useState<number[] | null>(null);
 
   const [containerPos, setContainerPos] = useState(0);
 
@@ -40,8 +37,6 @@ const Testimonial: React.FC<TestimonialProps> = ({
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
-
-  
 
   return (
     <motion.div
@@ -65,7 +60,9 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <div className="travlog__testimonial-reviewer">
         <span>{testimonial.name}</span> / <span>{testimonial.occupation}</span>
       </div>
-      <div className="travlog__testimonial-rating">{windowSize[0]}</div>
+      <div className="travlog__testimonial-rating">
+        {windowSize && windowSize[0]}
+      </div>
       <p>{testimonial.review}</p>
     </motion.div>
   );
