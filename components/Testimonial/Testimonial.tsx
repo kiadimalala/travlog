@@ -6,6 +6,10 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 
+import { Rating } from "@smastrom/react-rating";
+
+import "@smastrom/react-rating/style.css";
+
 interface TestimonialProps {
   className?: string;
   testimonial?: any;
@@ -61,7 +65,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
         <span>{testimonial.name}</span> / <span>{testimonial.occupation}</span>
       </div>
       <div className="travlog__testimonial-rating">
-        {windowSize && windowSize[0]}
+        <Rating style={{ maxWidth: 180 }} value={testimonial.rating} readOnly />
       </div>
       <p>{testimonial.review}</p>
     </motion.div>

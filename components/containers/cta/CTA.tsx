@@ -9,7 +9,7 @@ import { cta_deco } from "@/images/index";
 
 const CTA = () => {
   return (
-    <div className="travlog__cta">
+    <div className="travlog__cta section__padding">
       <div className="travlog__cta-container">
         <div className="travlog__cta-container-content">
           <h3>subscribe to our newsletter</h3>

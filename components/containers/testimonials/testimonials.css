@@ -33,8 +33,9 @@
 
 .travlog__testimonials-container {
   width: 100%;
-  min-height: 456.4px;
+  min-height: 526px;
   position: relative;
+  height: max-content;
 }
 
 .btn-left,
