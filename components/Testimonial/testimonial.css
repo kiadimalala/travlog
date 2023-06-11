@@ -7,6 +7,7 @@
   position: absolute;
   width: max-content;
   user-select: none;
+  width: 100%;
 }
 .travlog__testimonial-avatar {
   width: 128px;
