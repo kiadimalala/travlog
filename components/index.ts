@@ -23,3 +23,5 @@ export {default as Input} from './Basics/Input/Input'
 export {default as Footer} from './containers/footer/Footer'
 
 export {default as Testimonials} from "./containers/testimonials/Testimonials"
+
+export {default as Testimonial} from "./Testimonial/Testimonial"

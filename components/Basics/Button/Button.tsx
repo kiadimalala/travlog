@@ -5,6 +5,7 @@ interface BtnProps {
   label?: string;
   children?: React.ReactNode;
   onClick?: (e: any) => void;
+  ref?:any
 }
 
 const Button: React.FC<BtnProps> = ({
@@ -12,9 +13,11 @@ const Button: React.FC<BtnProps> = ({
   label,
   children,
   onClick,
+  ref
 }) => {
   return (
-    <button
+    <button 
+    ref={ref}
       type="button"
       onClick={onClick}
       className={`travlog_btn ${className ? className : ""}`}

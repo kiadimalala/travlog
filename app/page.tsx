@@ -17,8 +17,9 @@ export default function Home() {
       {/* <Services /> */}
       <Travel />
       <Features />
-      <CTA />
       <Testimonials />
+      <CTA />
+
       <Footer />
     </div>
   );
