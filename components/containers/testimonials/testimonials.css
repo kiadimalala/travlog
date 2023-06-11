@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 56px;
-
+  height: auto;
   overflow: hidden;
 }
 
@@ -60,10 +60,14 @@
   .travlog__testimonials-container {
     max-width: 584px;
   }
+  .travlog__testimonials-content {
+    min-height: 582px;
+  }
 }
 @media screen and (max-width: 768px) {
   .travlog__testimonials-container {
     max-width: 456px;
+    height: max-content;
   }
   .travlog__testimonials {
     margin: 64px 0;
