@@ -43,7 +43,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
       className="travlog__testimonial"
       initial={{ opacity: 0 }}
       animate={{
-        opacity: pos === position ? 1 : 0.8,
+        opacity: pos === position ? 1 : 0,
         left: `${(pos - position) * containerSize - containerPos}px`,
       }}
       transition={{ type: "spring", stiffness: 260, damping: 20 }}
