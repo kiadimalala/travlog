@@ -3,7 +3,9 @@
   display: flex;
   align-items: center;
 }
-
+.travlog__services-content {
+  position: relative;
+}
 .travlog__services-content h3 {
   text-transform: uppercase;
 
@@ -23,8 +25,14 @@
   margin-top: 16px;
 }
 
-.travlog__services-content_services {
+.travlog__services-content_services-carousel {
+  flex: 1;
+  overflow: hidden;
+}
+
+.inner__carousel {
   display: flex;
-  align-items: center;
+  cursor: grab;
   gap: 21px;
+  align-items: center;
 }

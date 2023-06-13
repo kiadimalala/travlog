@@ -14,7 +14,7 @@ export default function Home() {
     <div className="App">
       <Header />
       <Brand />
-      {/* <Services /> */}
+      <Services />
       <Travel />
       <Features />
       <Testimonials />

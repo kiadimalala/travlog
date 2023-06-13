@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import "./service.css";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 interface serviceProps {
   className?: string;
   service?: any;
@@ -8,7 +11,7 @@ interface serviceProps {
 
 const Service: React.FC<serviceProps> = ({ className, service }) => {
   return (
-    <div className="travlog__service">
+    <motion.div className="travlog__service">
       <div className="travlog__service-image">
         <Image src={service.img} alt={service.tittle} />
       </div>
@@ -16,7 +19,7 @@ const Service: React.FC<serviceProps> = ({ className, service }) => {
         <h1>{service.title}</h1>
         <p>{service.text}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

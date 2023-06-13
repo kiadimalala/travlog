@@ -1,6 +1,6 @@
 .travlog__service {
-  width: 350px;
-  height: 443px;
+  min-width: 350px;
+  min-height: 443px;
 
   background: var(--color-white);
   border: 1px solid rgba(25, 24, 37, 0.1);
@@ -17,7 +17,7 @@
 .travlog__service-content {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 32px; 
   min-height: 153px;
 }
 .travlog__service-content h1 {
