@@ -67,7 +67,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <div className="travlog__testimonial-rating">
         <Rating style={{ maxWidth: 180 }} value={testimonial.rating} readOnly />
       </div>
-      <p>{testimonial.review}</p>
+      <p>{testimonial.review} </p>
     </motion.div>
   );
 };

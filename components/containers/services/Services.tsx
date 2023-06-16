@@ -28,14 +28,30 @@ const services = [
 const Services = () => {
   const carousel = useRef<any>(null);
   const [width, setWidth] = useState(0);
+  const [windowSize, setWindowSize] = useState<number[] | null>(null);
 
   useEffect(() => {
     carousel &&
       setWidth(carousel?.current?.scrollWidth - carousel?.current?.offsetWidth);
   }, []);
 
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    setWindowSize([window.innerWidth, window.innerHeight]);
+  }, []);
+
   return (
-    <div className={`${circular.className} travlog__services`}>
+    <div className={`${circular.className} travlog__services section__padding`}>
       <div className="travlog__services-content">
         <h3>services</h3>
         <h1>Our top value categories for you</h1>
@@ -46,7 +62,11 @@ const Services = () => {
       >
         <motion.div
           className="inner__carousel"
-          drag="x"
+          drag={
+            windowSize && windowSize?.length > 0 && windowSize[0] <= 1024
+              ? false
+              : "x"
+          }
           dragConstraints={{ right: 0, left: -width }}
         >
           {services.map((service, index) => (

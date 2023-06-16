@@ -1,5 +1,4 @@
 .travlog__services {
-  padding: 64px 8rem;
   display: flex;
   align-items: center;
 }
@@ -35,4 +34,31 @@
   cursor: grab;
   gap: 21px;
   align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .travlog__services {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .travlog__services-content {
+    text-align: center;
+  }
+  .travlog__services-content h1 {
+    max-width: max-content;
+    margin-right: 0 !important;
+  }
+  .travlog__services-content_services-carousel {
+    padding: 64px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .travlog__services-content_services-carousel {
+    width: 100%;
+  }
+  .inner__carousel {
+    flex-direction: column;
+    flex: 1;
+    
+  }
 }

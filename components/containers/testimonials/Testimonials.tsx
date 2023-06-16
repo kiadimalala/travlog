@@ -4,9 +4,6 @@ import { Button, Testimonial } from "@/components";
 
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { Pagination, EffectFade } from "swiper";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/virtual";
@@ -44,7 +41,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-  const swiper = useSwiper();
+
   const [position, setPosition] = useState(0);
 
   const onNext = () => {
